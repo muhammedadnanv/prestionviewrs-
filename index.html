@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+  body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input[type="text"], input[type="email"], input[type="tel"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+  }
+  input[type="submit"] {
+    background-color: #00f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  input[type="submit"]:hover {
+    background-color: #007acc;
+  }
+</style>
+</head>
+<body>
+
+<form id="registrationForm" action="mailto:adnanmuhammad4393@gmail.com" method="post" enctype="text/plain">
+  <label for="name">Your Name:</label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="email">Your Email:</label>
+  <input type="email" id="email" name="email" required>
+  
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone">
+  
+  <label for="source">Where did you hear about the presentation?</label>
+  <select id="source" name="source">
+    <option value="developer_community">Developer Community</option>
+    <option value="instagram">Instagram</option>
+    <option value="linkedin">LinkedIn</option>
+    <option value="social_media">Social Media</option>
+    <option value="other">Other</option>
+  </select>
+  
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
